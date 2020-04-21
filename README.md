@@ -5,8 +5,8 @@ In this project a PID controller has been implemented in C++ to control the posi
 # Results
 Using the PID controller, car can safely manuever around the track at upto 50mph! Further higher speeds are possible with additional parameter tuning or twiddle factor implementation.
 
-[25-30 mph!](https://youtu.be/hAdpto5F2Kw)
-[50 mph!](https://youtu.be/hAdpto5F2Kw)
+[25-30 mph](https://youtu.be/hAdpto5F2Kw)
+[50 mph](https://youtu.be/x2NVFSPnP-M)
 ---
 ## Dependencies
 
