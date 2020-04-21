@@ -10,7 +10,7 @@ using nlohmann::json;
 using std::string;
 int count=0;
 int flag=0;
-double set_speed =100.0;
+double set_speed =50.0;
 double kp   = 0.1;
 double ki   = 0.0001;
 double kd   = 2.0;
