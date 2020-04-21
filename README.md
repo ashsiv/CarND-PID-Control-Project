@@ -4,7 +4,7 @@ In this project a PID controller has been implemented in C++ to control the posi
 ![PID Car Manuever Implementation](https://github.com/ashsiv/PID-Controller---Car-Manuever/blob/master/images/Cover%20Image.JPG)
 ---
 ## Implementation
-The key algorithm is implemented in 'PID.cpp' (Under UpdateError and TotalError functions). The PID parameters are implemented in main.cpp
+The key algorithm is implemented in 'PID.cpp' (Under UpdateError and TotalError functions). The PID parameters are defined in Main.cpp
 
 ```
 PID.cpp
