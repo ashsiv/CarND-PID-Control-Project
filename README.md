@@ -36,7 +36,7 @@ Tuning: All the parameters have been tuned manually.
 Effect of P, I and D components of PID algorithm
 
 * Having a high 'P' value  leads to a oscillations - thereby taking a lot time for the car to settle from a disturbance (turn) -eventually crash!
-* A good 'D' value for the above set 'P' value not only allows the car to correct for an error quickly but also avoids overshooting the setpoint (lane center or set speed)
+* A good 'D' value for the above set 'P' value not only allows the car to correct for an error quickly but also avoids oscillations or overshooting the setpoint (lane center or set speed)
 * 'I' component played an important role in correcting for minor offset error in lane center position over center (lane center self correction will be evident when the car is moving in a straight track).
 
 ---
