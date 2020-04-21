@@ -3,7 +3,30 @@ In this project a PID controller has been implemented in C++ to control the posi
 
 ![PID Car Manuever Implementation](https://github.com/ashsiv/PID-Controller---Car-Manuever/blob/master/images/Cover%20Image.JPG)
 ---
-# Results
+## Implementation
+The key algorithm is implemented in 'PID.cpp' (Under UpdateError and TotalError functions). The PID parameters are implemented in main.cpp
+
+```
+PID.cpp
+==========
+void PID::UpdateError(double cte,int reset_flag) {
+...
+}
+
+double PID::TotalError() {
+...
+}
+
+Main.cpp
+========
+double set_speed =100.0;
+double kp   = 0.1;
+double ki   = 0.0001;
+double kd   = 2.0;
+```
+
+---
+## Results
 Using the PID controller, car can safely manuever around the track at upto 50mph! Further higher speeds are possible with additional parameter tuning or twiddle factor implementation.
 
 * [25-30 mph](https://youtu.be/hAdpto5F2Kw)
