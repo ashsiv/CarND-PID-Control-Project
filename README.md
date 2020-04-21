@@ -44,8 +44,8 @@ Effect of P, I and D components of PID algorithm
 ## Results
 Using the PID controller, car can safely manuever around the track at upto 50mph! Further higher speeds are possible with additional parameter tuning or twiddle factor implementation.
 
-* [25-30 mph](https://youtu.be/hAdpto5F2Kw)
-* [50 mph](https://youtu.be/x2NVFSPnP-M)
+* [25-30 mph](https://youtu.be/x2NVFSPnP-M)
+* [50 mph](https://youtu.be/hAdpto5F2Kw)
 ---
 ## Dependencies
 
