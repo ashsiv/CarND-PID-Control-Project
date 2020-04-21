@@ -29,15 +29,15 @@ double kd   = 2.0;
 
 Tuning: All the parameters have been tuned manually. 
 
-* First the P value (Proportional gain) is set to a constant. I and D values set to zero.
-* Next for the given P value, D value or differential gain is carefully set until the vehicle avoids oscillations / overshooting the setpoint (lane center or set speed)
-* Finally I component (or Integrat gain) value is set to allow vehicle to correct / fine tune minor lane center error over time.
+* First the 'P' value (Proportional gain) is set to a constant. 'I' and 'D' values set to zero.
+* Next for the given 'P' value, 'D' value or differential gain is carefully set until the vehicle avoids oscillations / overshooting the setpoint (lane center or set speed)
+* Finally 'I' component (or Integrat gain) value is set to allow vehicle to correct / fine tune minor lane center error over time.
 
 Effect of P, I and D components of PID algorithm
 
-* Having a high P value  leads to a oscillations - thereby taking a lot time for the car to settle from a disturbance (turn) -eventually crash!
-* A good combination of P and D value not only allows to correct for an error quickly but also avoids overshooting the setpoint (lane center or set speed)
-* I component played an important role in correcting for minor offset error in lane center position (lane center self correction will be evident when the car is moving in a straight track).
+* Having a high 'P' value  leads to a oscillations - thereby taking a lot time for the car to settle from a disturbance (turn) -eventually crash!
+* A good 'D' value for the above set 'P' value not only allows the car to correct for an error quickly but also avoids overshooting the setpoint (lane center or set speed)
+* 'I' component played an important role in correcting for minor offset error in lane center position over center (lane center self correction will be evident when the car is moving in a straight track).
 
 ---
 ---
