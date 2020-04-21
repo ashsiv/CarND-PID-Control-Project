@@ -4,7 +4,7 @@ In this project a PID controller has been implemented in C++ to control the posi
 ![PID Car Manuever Implementation](https://github.com/ashsiv/PID-Controller---Car-Manuever/blob/master/images/Cover%20Image.JPG)
 ---
 ## Implementation
-The key algorithm is implemented in 'PID.cpp' (Under UpdateError and TotalError functions). The PID parameters are defined in Main.cpp
+The key algorithm is implemented in 'PID.cpp' (Under UpdateError and TotalError functions). The P,I,D parameters are defined in Main.cpp
 
 ```
 PID.cpp
@@ -24,7 +24,22 @@ double kp   = 0.1;
 double ki   = 0.0001;
 double kd   = 2.0;
 ```
+---
+## Discussion
 
+Tuning: All the parameters have been tuned manually. 
+
+* First the P value (Proportional gain) is set to a constant. I and D values set to zero.
+* Next for the given P value, D value or differential gain is carefully set until the vehicle avoids oscillations / overshooting the setpoint (lane center or set speed)
+* Finally I component (or Integrat gain) value is set to allow vehicle to correct / fine tune minor lane center error over time.
+
+Effect of P, I and D components of PID algorithm
+
+* Having a high P value  leads to a oscillations - thereby taking a lot time for the car to settle from a disturbance (turn)
+* A good combination of P and D value not only allows to correct for an error quickly but also avoids overshooting the setpoint (lane center or set speed)
+* I component played an important role in correcting for minor offset error in lane center position (lane center self correction will be evident when the car is moving in a straight track).
+
+---
 ---
 ## Results
 Using the PID controller, car can safely manuever around the track at upto 50mph! Further higher speeds are possible with additional parameter tuning or twiddle factor implementation.
